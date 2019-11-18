@@ -33,23 +33,38 @@ let a = 0;
 let b = 0;
 let c = 0;
 
+const unchecked = document.querySelectorAll('.unchecked');
+const checked = document.querySelectorAll('.checked');
+
 function check() {
     if (document.getElementById("categoryLeading").checked === true) {
         a = 400;
+        unchecked[0].style.display = 'none';
+        checked[0].style.display = 'flex';
     } else {
         a = 0;
+        unchecked[0].style.display = 'block';
+        checked[0].style.display = 'none';
     }
 
     if (document.getElementById("categoryParodist").checked === true) {
         b = 165;
+        unchecked[1].style.display = 'none';
+        checked[1].style.display = 'flex';
     } else {
         b = 0;
+        unchecked[1].style.display = 'block';
+        checked[1].style.display = 'none';
     }
 
     if (document.getElementById("categoryDj").checked === true) {
         c = 300;
+        unchecked[2].style.display = 'none';
+        checked[2].style.display = 'flex';
     } else {
         c = 0;
+        unchecked[2].style.display = 'block';
+        checked[2].style.display = 'none';
     }
 
     if (document.getElementById("categoryDj").checked === true && document

@@ -134,13 +134,37 @@
         <div class="contacts">
             <div class="contacts-form">
                 <form action="https://formspree.io/misio778m@gmail.com" method="POST" target="_blank">
-                    <label> <input type="checkbox" name="Veduchyy" id="categoryLeading" class="checkboxCategory">
-                        <span>Ведучий - 400$</span></label>
-                    <label> <input type="checkbox" name="Dzidzio" id="categoryParodist" class="checkboxCategory">
-                        <span>Пародист Дзідзя - 165$/година</span> </label>
-                    <label> <input type="checkbox" name="Dj" id="categoryDj" class="checkboxCategory"> <span>Робота Dj-я
-                            - 300$</span></label>
-                    <p>Разом дешевше !</p>
+                    <label> <span class="unchecked"></span>
+                        <span class="checked"><svg width="20px" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#fff"
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                </path>
+                            </svg></span>
+                        <input type="checkbox" name="Veduchyy" id="categoryLeading" class="checkboxCategory">
+                        Ведучий - 400$ <div id="test"></div></label>
+                    <label> <span class="unchecked"></span>
+                        <span class="checked"><svg width="20px" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#fff"
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                </path>
+                            </svg></span>
+                        <input type="checkbox" name="Dzidzio" id="categoryParodist" class="checkboxCategory">
+                        Пародист Дзідзя - 165$/година</label>
+                    <label> <span class="unchecked"></span>
+                        <span class="checked"><svg width="20px" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#fff"
+                                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                                </path>
+                            </svg></span>
+                        <input type="checkbox" name="Dj" id="categoryDj" class="checkboxCategory">Робота Dj-я
+                        - 300$</label>
+                    <p style="color: #fff; text-align:center; font-size:1.2rem; width: 100%">Разом дешевше !</p>
                     <br>
                     <input style="width:100%" type="tel" name="phone" minlength="10" placeholder="Ваш мобільний номер:">
                     <input style="width:100%" type="email" name="email" placeholder="Ваша пошта:">
@@ -160,7 +184,15 @@
     </section>
     <footer>
         <div class="copyright">© 2019 Yurey. Створено Saldan Roman</div>
-        <a href="#main" class="toTop">&#8743;</a>
+        <a href="#main" class="toTop">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up"
+                class="svg-inline--fa fa-chevron-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path fill="#38DCC8"
+                    d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+                </path>
+            </svg>
+        </a>
     </footer>
 
     <button id="showCaruselButton" hidden type="button" class="btn btn-primary" data-toggle="modal"

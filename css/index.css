@@ -1,32 +1,31 @@
 html {
-    color: darkgrey;
     scroll-behavior: smooth;
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
     font-size: 14px;
+    outline: none;
 }
 
-/* .navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-item:hover .nav-link {
-    color: #38DCC8;
-}
-
-.navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #38DCC8;
-} */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000a2;
+}
 
 
 svg {
-    fill: #0000007c;
+    fill: #000000a2;
 }
 
 svg:hover {
@@ -79,9 +78,12 @@ section:nth-of-type(5) {
 }
 
 footer {
+    flex-direction: column;
     color: #38DCC8;
     background-color: #fff;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .aboutMe {
@@ -186,7 +188,25 @@ footer {
     cursor: pointer;
 }
 
-@media screen and (min-width: 650px) {
+.copyright {
+    order: 2;
+}
+
+.toTop {
+    order: 1;
+    color: #38DCC8;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.toTop:hover {
+    transition: .3s;
+    opacity: .7;
+    color: #38DCC8;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
     .aboutMe {
         justify-content: space-between;
         align-items: center;
@@ -222,6 +242,18 @@ footer {
         flex-basis: 33.33%;
         height: 50vh;
     }
+
+    footer {
+        flex-direction: row;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+    .toTop {
+        order: 2;
+    }
 }
 
 .gallery-first-imgs:hover,
@@ -252,6 +284,14 @@ footer {
     background-repeat: no-repeat;
 }
 
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-light .navbar-toggler-icon:focus {
+    outline: none;
+}
+
 .transperant {
     transition: .3s;
     background-color: rgba(255, 255, 255, 0)
@@ -262,7 +302,7 @@ footer {
 }
 
 .move {
-    transition: .3s;
+    transition: .4s;
     transform: translate(-100%, -100%) scale(.10, .10);
 }
 
@@ -270,13 +310,4 @@ footer {
     height: 0;
     padding: 0;
     margin: 0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: aqua;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-    color: red;
 }

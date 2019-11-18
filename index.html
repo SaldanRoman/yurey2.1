@@ -102,9 +102,15 @@
 
     <section id="category">
         <div class="category">
-            <div class="category-leadingOfEvent"><a href="#">ведучий свята</a> </div>
-            <div class="category-dj"><a href="#">діджей</a></div>
-            <div class="category-parodist"><a href="#">пародист</a></div>
+            <div class="category-leadingOfEvent"><a href="#">
+                    <h1>ведучий свята</h1>
+                </a> </div>
+            <div class="category-dj"><a href="#">
+                    <h1>діджей</h1>
+                </a></div>
+            <div class="category-parodist"><a href="#">
+                    <h1>пародист</h1>
+                </a></div>
         </div>
     </section>
     <section id="gallery">
@@ -122,7 +128,35 @@
         </div>
     </section>
     <section id="contacts">
-        <h1>Contacts.</h1>
+        <div class="contacts-header">
+            <h1>напишіть мені</h1>
+        </div>
+        <div class="contacts">
+            <div class="contacts-form">
+                <form action="https://formspree.io/misio778m@gmail.com" method="POST" target="_blank">
+                    <label> <input type="checkbox" name="Veduchyy" id="categoryLeading" class="checkboxCategory">
+                        <span>Ведучий - 400$</span></label>
+                    <label> <input type="checkbox" name="Dzidzio" id="categoryParodist" class="checkboxCategory">
+                        <span>Пародист Дзідзя - 165$/година</span> </label>
+                    <label> <input type="checkbox" name="Dj" id="categoryDj" class="checkboxCategory"> <span>Робота Dj-я
+                            - 300$</span></label>
+                    <p>Разом дешевше !</p>
+                    <br>
+                    <input style="width:100%" type="tel" name="phone" minlength="10" placeholder="Ваш мобільний номер:">
+                    <input style="width:100%" type="email" name="email" placeholder="Ваша пошта:">
+                    <input type="hidden" name="summary" id="summary">
+                    <textarea style="width:100%" name="comment" placeholder="Ваша коментар:"></textarea>
+                    <br>
+                    <div class="contacts-form-submit">
+                        <div id="price">Ціна: </div>
+                        <input type="submit" onclick="return validateForm(this.form)">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-info">asd <br>asd <br>asd <br>asd <br></div>
+        </div>
+        </div>
+        </div>
     </section>
     <footer>
         <div class="copyright">© 2019 Yurey. Створено Saldan Roman</div>

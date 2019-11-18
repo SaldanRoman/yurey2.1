@@ -72,7 +72,6 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(5) {
-    height: 650px;
     background-color: #38DCC8;
 }
 
@@ -127,24 +126,27 @@ footer {
     display: flex;
     flex-direction: column;
     text-shadow: 0 0 2px #000;
+    width: 98%;
 }
 
 .category a,
 .category a:hover {
-    color: #fff;
     text-decoration: none;
+}
+
+.category h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
 }
 
 .category-leadingOfEvent,
 .category-dj,
 .category-parodist {
     border: 9px solid #fff;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: bold;
     margin: 30px 0;
     padding: 20px 0;
-    cursor: pointer;
 }
 
 .category-leadingOfEvent {
@@ -191,6 +193,77 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.contacts-header {
+    border: 9px solid #fff;
+    margin: 30px 0;
+    padding: 20px 0;
+    width: 98%;
+}
+
+.contacts-header h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contacts-form {
+    width: 98%;
+}
+
+.contacts-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contacts-form form input[type='tel'],
+.contacts-form form input[type='email'],
+.contacts-form form input[type='submit'] {
+    border: none;
+    min-height: 50px;
+    margin: 10px 0;
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #38DCC8;
+}
+
+.contacts-form form textarea {
+    border: none;
+    margin: 10px 0;
+    min-height: 250px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #38DCC8;
+}
+
+.contacts-form-submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#price {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.contacts-form form ::placeholder {
+    color: #38DCC8;
+    font-size: 1.2rem;
 }
 
 .copyright {
@@ -248,6 +321,18 @@ footer {
         height: 50vh;
     }
 
+    .contacts {
+        flex-direction: row-reverse;
+    }
+
+    .contacts-form {
+        width: 45%;
+    }
+
+    .contact-info {
+        width: 45%;
+    }
+
     footer {
         flex-direction: row;
     }
@@ -259,6 +344,7 @@ footer {
     .toTop {
         order: 2;
     }
+
 }
 
 .gallery-first-imgs:hover,

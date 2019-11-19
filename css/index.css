@@ -314,6 +314,7 @@ footer {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 98%;
 }
 
@@ -322,11 +323,13 @@ footer {
 }
 
 .contact-info a {
+
     font-size: 1.2rem;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
+    width: fit-content;
 }
 
 .copyright {
@@ -393,6 +396,7 @@ footer {
     }
 
     .contact-info {
+        align-items: center;
         margin-top: 0;
         width: 45%;
         height: 100vh;

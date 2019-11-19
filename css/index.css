@@ -393,9 +393,11 @@ footer {
 
     .contacts-form {
         width: 45%;
+        align-self: flex-start;
     }
 
     .contact-info {
+        align-self: flex-start;
         align-items: center;
         margin-top: 0;
         width: 45%;

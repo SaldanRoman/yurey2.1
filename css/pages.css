@@ -10,8 +10,11 @@ body {
     background-color: #38DCC8;
 }
 
+header {
+    height: 66px;
+}
+
 section {
-    height: 650px;
     background-color: #38DCC8;
     width: 100%;
     box-sizing: border-box;
@@ -22,8 +25,12 @@ section {
     flex-direction: column;
 }
 
+section:first-of-type {
+    height: 310px;
+}
+
 .backLink {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -35,13 +42,15 @@ section {
 }
 
 section h1 {
-    margin-top: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
+    border: 9px solid #fff;
+    margin: 30px 0;
+    padding: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
     text-transform: uppercase;
     color: #fff;
-    border: 7px solid #fff;
-    padding: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -63,6 +72,49 @@ svg:hover {
     fill: #38DCC8;
 }
 
+h2 {
+    max-width: 1000px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+p {
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 10px;
+
+}
+
+.about {
+    max-width: 1000px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-video {
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.content-text {
+    width: 100%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
 footer {
     flex-direction: column-reverse;
     color: #38DCC8;
@@ -75,5 +127,38 @@ footer {
 @media screen and (min-width: 576px) {
     footer {
         flex-direction: row;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .about {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column
+    }
+
+    p {
+        color: #fff;
+        font-size: 1.5rem;
+        width: 100%;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .content {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .content-video {
+        width: 48%;
+        border: 1px solid #fff;
+    }
+
+    .content-text {
+        width: 45%;
+        border: 1px solid #fff;
     }
 }

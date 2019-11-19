@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     outline: none;
 }
@@ -73,6 +73,7 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(5) {
+    padding-bottom: 20px;
     background-color: #38DCC8;
 }
 
@@ -237,6 +238,7 @@ footer {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .contacts-form form input[type='checkbox'] {
@@ -308,6 +310,25 @@ footer {
     font-size: 1.2rem;
 }
 
+.contact-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.contact-info h2 {
+    color: #fff;
+}
+
+.contact-info a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
 .copyright {
     order: 2;
 }
@@ -372,7 +393,9 @@ footer {
     }
 
     .contact-info {
+        margin-top: 0;
         width: 45%;
+        height: 100vh;
     }
 
     footer {

@@ -15,6 +15,7 @@ header {
 }
 
 section {
+    margin: 30px 0;
     background-color: #38DCC8;
     width: 100%;
     box-sizing: border-box;
@@ -106,12 +107,11 @@ p {
 
 .content-video {
     width: 100%;
-    border: 1px solid #fff;
+    box-sizing: border-box;
 }
 
 .content-text {
     width: 100%;
-    border: 1px solid #fff;
     box-sizing: border-box;
 }
 
@@ -154,11 +154,9 @@ footer {
 
     .content-video {
         width: 48%;
-        border: 1px solid #fff;
     }
 
     .content-text {
         width: 45%;
-        border: 1px solid #fff;
     }
 }

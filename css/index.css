@@ -435,7 +435,7 @@ footer {
 
 .preloader-img {
     max-width: 1000px;
-    width: 100%;
+    width: 98%;
     height: 100vh;
     display: flex;
     justify-content: center;

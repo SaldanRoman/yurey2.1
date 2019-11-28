@@ -48,7 +48,7 @@ section {
 }
 
 section:nth-of-type(1) {
-    height: 650px;
+    height: 100vh;
     color: #fff;
     text-shadow: 0 0 5px #00000066;
     text-transform: uppercase;

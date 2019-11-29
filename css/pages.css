@@ -35,6 +35,7 @@ section:first-of-type {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    padding: 0 10px;
 }
 
 .backLink:hover {

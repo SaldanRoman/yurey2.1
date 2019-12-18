@@ -1,9 +1,24 @@
 html {
     scroll-behavior: smooth;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    min-height: 100%;
 }
 
 body {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -43,7 +58,6 @@ section {
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center top;
 }
 
@@ -53,9 +67,6 @@ section:nth-of-type(1) {
     text-shadow: 0 0 5px #00000066;
     text-transform: uppercase;
     background-image: url(../img/ld-08.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 }
 
 section:nth-of-type(2) {
@@ -68,9 +79,6 @@ section:nth-of-type(3) {
     color: #fff;
     text-shadow: 0 0 5px #00000066;
     background-image: url(../img/dz-06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
 }
 
 section:nth-of-type(4) {
@@ -355,7 +363,12 @@ footer {
     text-decoration: none;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 650px) {
+    section:nth-of-type(1),
+    section:nth-of-type(3) {
+        background-attachment: fixed;
+    }
+
     .aboutMe {
         justify-content: space-between;
         align-items: center;
